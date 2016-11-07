@@ -4,9 +4,9 @@ Pagina nacional
 
 Requerimientos
 
-•	Colocar las últimas dos revistas de aseduis
-o	Submenu a cada revista(2 por ahora)
-•	Colocar los estatutos
+•	Colocar las últimas dos revistas de aseduis <br>
+o	Submenu a cada revista(2 por ahora)<br>
+•	Colocar los estatutos<br>
 o	El documento como tal
 o	Vision, misión y razón social(Pestaña “quienes somos”)
 o	Junta directiva aseduis nacional
