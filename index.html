@@ -32,6 +32,9 @@
       margin-bottom: 30px;
   }  
 
+  #subtitulo {
+    font-size: 250%;  	
+  }
   .jumbotron {
       background-color: #ff1a1a;
       color: #fff;
@@ -44,6 +47,16 @@
   .bg-grey {
       background-color: #f6f6f6;
   }
+
+  .bg-red{
+      background-color: #333333;
+  }
+  .bg-red h2{
+      color: white;
+  }
+
+
+
   .logo-small {
       color: #ff1a1a;
       font-size: 50px;
@@ -193,6 +206,39 @@
         font-size: 150px;
     }
   }
+
+  .contenedor_an{
+  	display:flex; 
+  	flex-direction:column;  
+  	height:450px;
+  }
+
+  .titulo_an{
+  	flex:2; 
+  	border-style:black; 
+  	margin: 5%; 
+  }
+
+  .imagen_an{
+  	flex: 3;
+  }
+
+  .texto_an{
+  	flex:4; 
+  	text-align:justify; 
+  	margin: 7%; 
+  }
+
+  .texto_an p{
+  	font-size:110%;
+  }
+
+  .espacios{
+  	border-width:1px;
+  	border-style: outset;
+  	margin:4%;
+  }
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -214,23 +260,23 @@
         <li><a href="#portfolio">BANER</a></li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONGRESO</a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" style="background-color:#ff1a1a;">
           <li><a href="#">Pagina</a></li>
           <li><a href="#">Fotos</a></li>
         </ul>
       </li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">REVISTA</a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" style="background-color:#ff1a1a;">
           <li><a href="docs/revista_ASEDUIS_No_35_s.pdf" target="_blank">Revista No. 35</a></li>
           <li><a href="docs/revista_ASEDUIS_No_36-s.pdf" target="_blank">Revista No. 36</a></li>
         </ul>
       </li>
-      <li><a href="#">QUIENES SOMOS</a></li>
+      <li><a href="#nosotros">QUIENES SOMOS</a></li>
       <li><a href="#portfolio">OLIMPIADAS</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">ASAMBLEAS</a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" style="background-color:#ff1a1a;">
           <li><a href="#">ASAMBLEA1</a></li>
           <li><a href="#">ASAMBLEA2</a></li>
           <li><a href="#">ASAMBLEA3</a></li> 
@@ -245,7 +291,7 @@
 
 <div class="jumbotron text-center">
   <h1>ASEDUIS</h1> 
-  <p class="subtitle">Asociacion de Egresados de la Universidad Industrial de Santander</p> 
+  <p id="subtitulo" class="subtitle" >Asociacion de Egresados de la Universidad Industrial de Santander</p> 
 
 </div>
 
@@ -306,19 +352,55 @@
 </div>
 -->
 
-<div class="container-fluid ">
-  <div class="row">
-  <a href="http://www.uis.edu.co/verificacionEgresados/registroEgresado/verificarEgresado.seam">
-    <div class="col-sm-4 img-rounded" style="margin-top: 200px;">
-    
-      <img class="img-responsive" src="img/linkeleccion.png">HAGA CLICK AQUI
-      
-    </div></a>
-    <div class="col-sm-8">
-    <img class="img-responsive"  src="img/ELECCION REPRESENTANTE DE LOS EGRESADOS.png">
-      
-    </div>
-  </div>
+<div id="nosotros" class="container-fluid text-center bg-red">
+	<div class="row">
+  		<h2>ACERCA DE NOSOTROS</h2>
+  	</div>
+	<div class="row">	
+	   <div class="col-sm-3 bg-grey espacios" >
+	    
+	     <div class="contenedor1">
+	     	<div class="titulo_an">
+	     		<h3>Razón Social</h3>
+	     	</div>
+	     	<div class="imagen_an">
+	     		<img src="img/1-copia.jpg" class="img-thumbnail" width="350" height="350">
+	     	</div>
+	     	<div class="texto_an">
+	     		<p >La entidad denominada, Asociación de Egresados de la Universidad Industrial de Santander, es una Asociación, sin ánimo de lucro, que se regirá por las leyes colombianas.<p>
+	     	</div>
+	     </div>	      
+	   </div>
+
+	   <div class="col-sm-3 bg-grey espacios" >	    
+	     <div class="contenedor1">
+	     	<div class="titulo_an">
+	     		<h3>Misión</h3>
+	     	</div>
+	     	<div class="imagen_an">
+	     		<img src="img/2-copia.jpg" class="img-thumbnail" width="350" height="350">
+	     	</div>
+	     	<div class="texto_an">
+	     		<p >La entidad denominada, Asociación de Egresados de la Universidad Industrial de Santander, es una Asociación, sin ánimo de lucro, que se regirá por las leyes colombianas.<p>
+	     	</div>
+	     </div>	      
+	   </div>
+
+	   <div class="col-sm-3 bg-grey espacios" >	    
+	     <div class="contenedor1">
+	     	<div class="titulo_an">
+	     		<h3>Visión</h3>
+	     	</div>
+	     	<div class="imagen_an">
+	     		<img src="img/3-copia.jpg" class="img-thumbnail" width="350" height="350">
+	     	</div>
+	     	<div class="texto_an">
+	     		<p >La entidad denominada, Asociación de Egresados de la Universidad Industrial de Santander, es una Asociación, sin ánimo de lucro, que se regirá por las leyes colombianas.<p>
+	     	</div>
+	     </div>
+	      
+	   </div>
+	</div>
 </div>
 
 <!-- Container (Services Section) -->
@@ -391,10 +473,8 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -410,7 +490,6 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
